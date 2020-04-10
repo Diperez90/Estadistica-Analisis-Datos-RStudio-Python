@@ -1,7 +1,7 @@
 remove(list = ls())
 
 #Encuesta EMPECYT 2017
-setwd("C:/Users/mauri/iCloudDrive/MEA18 Personal/2019-04/SciData/Inferencia estadística para análisis de datos mediante RStudio y Python/Sesion 1/Enpecyt_2017-master")
+setwd("~/GitHub/SciData/Estadistica-Analisis-Datos-RStudio-Python/Enpecyt_2017/")
 dir() #para ver que objetos hay en la carpeta
 
 library(foreign) #para poder leer bases de datos tipo .dbf
@@ -11,7 +11,9 @@ cb1 <- read.dbf("enpecyt2017_cb1.dbf")
 view(cb1)
 names(cb1)
 
-head(cb1$S3P1) #ver las primeras 6 filas de la educación del encuestado
+head(cb1$S3P1) #ver los
+
+#primeras 6 datos de la educación del encuestado
 table(cb1$S3P1)
 
 head(cb1$FAC) #factor de expansión de cada individuo. La suma de FAC es el total de la población. ¿Cuanta gente representa ese individuo?
